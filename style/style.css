@@ -1,0 +1,731 @@
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+
+@import "fonts/fonts.css";
+@import "abstract/_variables.css";
+
+h1{
+    font-family: "Luciole";
+    font-size: var(--typescale-h1);
+    
+    border-left: 5px solid var(--secondary);
+    padding-left: 20px;
+    margin-left: 10px;
+}
+
+h2{
+    font-family: "Luciole";
+    font-size: var(--typescale-h2);
+}
+
+h3{
+    font-family: "Luciole";
+    font-size: var(--typescale-h3);
+}
+
+h4{
+    font-family: "Luciole";
+    font-size: var(--typescale-h4);
+}
+
+h5{
+    font-family: "Luciole";
+    font-size: var(--typescale-h5);
+}
+
+p{
+    font-family: "Archivo";
+    font-size: var(--typescale-text);
+}
+
+label{
+    font-size: var(--typescale-text);
+    font-family: "Archivo";
+}
+
+input{
+    font-size: var(--typescale-text);
+    font-family: "Archivo";
+}
+
+
+.fondVisiteur{
+    background-color: var(--fondVisiteurMembre);
+
+}
+
+.displayNone{
+    display: none !important;
+}
+
+.fondPro{
+    background-color: var(--fondPro);
+}
+
+/* -------------/  CLASSES  /------------- */
+
+/* textes */
+.texteLarge{
+    font-size: var(--typescale-large-text);
+}
+
+.texteSmall{
+    font-size: var(--typescale-small-text);
+}
+
+.boldArchivo{
+    font-family: "Archivo-bold";
+}
+
+.italicArchivo{
+    font-family: "Archivo-italic";
+}
+
+.boldItalicArchivo{
+    font-family: "Archivo-bold-italic";
+}
+
+.boldLuciole{
+    font-family: "Luciole-bold";
+}
+
+
+.grossisQuandHover{
+    transition: transform 0.3s ease;
+}
+
+.grossisQuandHover:hover{
+    transform: scale(1.05);
+}
+
+
+/* rectangle */
+.rectangleTitre{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 2%;
+}
+
+.rectangleTitre > h2{
+    margin-left: 1%;
+}
+
+
+/* boutons */
+
+.coMembre, .coPro, .nouvCompte{
+    display: block;
+    width: 541px;
+    height: 159px;
+    margin-left: 2%;
+    border-radius: 15px;
+    text-decoration: none;
+
+    transition: transform 0.2s ease;
+}
+
+.coMembre:hover, .coPro:hover, .nouvCompte:hover{
+    transform: scale(1.04);
+}
+
+
+.coMembre p, .coMembre h4, .coPro p, .coPro h4, .nouvCompte p, .nouvCompte h4{
+    color: white;
+}
+.coMembre svg, .coPro svg, .nouvCompte svg{
+    width: 100px;
+    height: 100px;
+    stroke-width: 6px;
+}
+.coMembre hr, .coPro hr, .nouvCompte hr{
+    rotate: 90deg;
+    width: 101px;
+    height: 3px;
+    border: none;
+    border-radius: 25px;
+}
+.coMembre hr{
+    background-color: var(--primaryDark);
+}
+.coPro hr{
+    background-color: var(--secondaryDark);    
+}
+.nouvCompte hr{
+    background-color: var(--accentDark);
+}
+.coMembre > div, .coPro > div, .nouvCompte > div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+.coMembre > div > div, .coPro > div > div, .nouvCompte > div > div{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+.coMembre > div > div + div, .coPro > div > div + div, .nouvCompte > div > div + div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.coMembre{
+    background-color: var(--primary);
+}
+.coPro{
+    background-color: var(--secondary);
+}
+.nouvCompte{
+    background-color: var(--accent);
+    padding-right: 2%;
+    padding-left: 1%;
+}
+
+
+@media screen and (max-width : 428px){
+
+    #conteneurTitreMobile h1{
+        border-left: none;
+        padding: 0px;
+        font-size: 2.5rem;
+        transform: translateY(-8px);
+    }
+
+    #conteneurTitreMobile h4{
+        font-size: 1.7rem;
+        transform: translateY(-8px);
+    }
+
+    .popUp p{
+        font-size: var(--typescale-text) !important;
+    }
+
+    .coMembre, .coPro, .nouvCompte{
+        width: 385.12px;
+        height: 100px;
+        margin-left: 0;
+        border-radius: 10px;
+        border-width: 4px;
+    }
+
+    .coMembre h3, .coPro h3, .nouvCompte h3{
+        font-size: var(--typescale-h4);
+    }
+
+    .coMembre p, .coPro p, .nouvCompte p{
+        font-size: var(--typescale-small-text);
+    }
+
+    .coMembre svg, .coPro svg, .nouvCompte svg{
+        width: 80px;
+        height: 80px;
+        stroke-width: 5px;
+    }
+
+    .coMembre hr, .coPro hr, .nouvCompte hr{
+        display: none;
+    }
+
+}
+
+.titrePortable{
+    display: none;
+}
+
+
+@media screen and (max-width : 428px){
+
+    .titrePortable{
+        display: block;
+    }
+
+    .titrePortable div{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: absolute;
+        left: 1%;
+        top: 3.5%;
+    }
+
+    .titrePortable img{
+        width: 85px;
+        height: 85px;
+    }
+
+    #conteneurTitreMobile #logoTitreMobile{
+        width: 100px;
+        height: auto;
+        transform: translate(0px, -25px);
+    }
+
+    #conteneurTitreMobile{
+        display: flex;
+        align-items: flex-start;
+    }
+}
+
+
+
+/*-------------/ apercu offre /--------------*/
+
+.lienApercuOffre{
+    width: fit-content;
+    height: fit-content;
+    margin: 5px;
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.apercuOffre{
+    width: 350px;
+    height: 450px;
+
+    border-radius: 20px;
+    background-color: white;
+    padding: 20px;
+
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.apercuOffre .conteneurSVGtexte{
+    display: flex;
+    align-items: center;
+    margin: 5px 0px;
+}
+
+.apercuOffre .conteneurSVGtexte img{
+    width: 25px;
+    height: 25px;
+}
+
+
+.apercuOffre .conteneurSVGtexte p{
+    font-size: 20px;
+}
+
+.conteneurSpaceBetween{                         /* un conteneur pour mettre les éléments en space between */   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.conteneurSpaceBetween .ouvert{
+    color: var(--accent);
+}
+
+.conteneurSpaceBetween .fermeBientot{
+    color: var(--secondary);
+}
+
+.conteneurSpaceBetween .ferme{
+    color: var(--rouge);
+}
+
+.apercuOffre img{
+    width: 380px;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.apercuOffre .conteneurImage{
+    position: relative;
+    display: inline-block;
+    width: fit-content;
+}
+
+.apercuOffre .conteneurImage p{
+    font-size: 1em;
+    text-align: right;
+}
+.apercuOffre .conteneurImage span{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.text-overlay {
+    font-family: "Archivo";
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    padding: 10px;
+    background-color: var(--primaryDark);
+    color: white; 
+    font-size: 0.7em;
+    z-index: 2;
+    width: fit-content;
+    height: fit-content;
+}
+
+
+.etoiles{
+    display: flex;
+    align-items: center;
+}
+
+.etoiles p{
+    margin-right: 5px;
+}
+
+.etoiles img{
+    width: 20px;
+    height: 20px;
+    transform: translateY(-5px);
+}
+
+.etoileMoitiePleine{
+    position: relative;
+}
+
+.apercuOffre .resumeApercu{
+    font-size: 1.2em;
+    margin: 10px 0px;
+    height: 55px;
+}
+
+.apercuOffre h3{
+    font-size: 2em;
+}
+
+
+.miseEnExergue{
+    border: 5px solid rgb(255, 219, 90);
+}
+
+/* Cas de mise en relief */
+.relief{
+    border: 10px solid;
+    border-image: linear-gradient(to right, #DDF289, #B9C549, #6C6E0F) 1;
+    /* border: #B9C549 solid 10px; */
+    padding: 10px;
+    /* border-radius: 20px; */
+}
+
+
+@media screen and (max-width : 428px){
+
+    #conteneurOffres{
+        margin-top: 30px;
+    }
+
+    .apercuOffre{
+        width: 300px;
+        height: fit-content;
+    
+        border-radius: 20px;
+        padding: 5px 10px;
+    }
+
+    .apercuOffre .conteneurSVGtexte{
+        margin: 5px 0px;
+    }
+
+
+    .apercuOffre h3{
+        font-size: 1.5em;
+    }
+
+    .apercuOffre .conteneurSVGtexte img{
+        width: 25px; 
+        height: 25px;
+    }
+
+    .apercuOffre p{
+        font-size: 16px; 
+    }
+
+    .apercuOffre img{
+        width: 280px; 
+        height: 120px; 
+        object-fit: cover;
+        display: block;
+    }
+
+    .text-overlay {
+        font-family: "Archivo";
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        padding: 5px;
+        background-color: var(--primaryDark);
+        color: white; 
+        font-size: 0.7em;
+        z-index: 2;
+      }
+
+      .etoiles img{
+        width: 10px;
+        height: 10px;
+        transform: translateY(-2px);
+    }
+
+    .apercuOffre .resumeApercu{
+        font-size: 1em; 
+    }
+}
+
+/*-------------/ HEADER PC-TAB /--------------*/
+
+
+@media screen and (min-width : 428px){
+
+.headerMobile{
+    display: none;
+}
+
+.headerPC-Tab h3{
+    font-size: 30px;
+}
+
+.headerPC-Tab{
+    display: block;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-bottom: 1px solid black;
+}
+
+.navHeader,.ulHeader,.aHeader{
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.navHeader{
+    width: 100%;
+    justify-content: space-between;
+    padding-right: 0;
+    /*border-bottom: var(--primary) solid 2px;*/
+}
+
+.logoHeader{
+    width: 135px;
+    height: 75px;
+    position: relative;
+    left: 30px;
+}
+
+#textPro{
+    font-size: 1.2em;
+    margin-left: 28px;
+    margin-bottom: 2px;
+    color: black;
+
+    font-family: "Luciole";
+}
+
+#logoEtPro{
+    display: flex;
+    align-items: end;
+    text-decoration: none;
+}
+
+.aHeader > img {
+    width: 63px;
+    height: 63px;
+    display: none;
+}
+
+.liHeader {
+    list-style: none;
+    border-right: 1px solid;
+    border-left: 1px solid;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+#test{
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+.fondVisiteur .li:hover{
+    background: linear-gradient(white, var(--primaryLight));
+}
+
+.fondPro .li:hover{
+    background: linear-gradient(white, var(--secondaryLight));
+}
+
+.aHeader {
+    outline: none;
+    text-decoration: none;
+}
+  
+.aHeader:link {
+    color: #000000;
+}
+  
+.aHeader:visited {
+    color: #000000;
+}
+
+.aHeader > h3 {
+    margin: 0;
+}
+
+.ulHeader .aHeader, #logoEtPro{
+    transition: transform 0.2s ease;
+}
+
+.ulHeader .aHeader:hover{
+    /*background: linear-gradient(white, var(--primary));*/
+    transform: translateY(-5px);
+}
+
+#logoEtPro:hover{
+    transform: scale(0.95);
+}
+
+/*.navBarPro .ulHeader .aHeader:hover{
+    background: linear-gradient(white, var(--secondary));
+}*/
+
+}
+
+/*-------------/ HEADER MOBILE /--------------*/
+
+@media screen and (max-width : 428px){
+
+    .headerPC-Tab{
+        display: none;
+    }
+
+    .headerMobile{
+        display: block;
+        background-color: var(--primaryDark);
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 10;
+    }
+
+    .ulHeaderMobile{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .aHeaderMobile > img {
+        width: 69px;
+        filter: brightness(0) invert(1);
+    }
+
+    .trait{
+        display: none;
+        background-color: #fff;
+        width: 52px;
+        height: 7px;
+        border-radius: 3px;
+    }
+
+}
+
+/*-------------/ MAIN /--------------*/
+
+rect{
+    fill: var(--secondary);
+}
+
+
+/*-------------/ FOOTER /--------------*/
+
+.footer {
+    background-color: #fff;
+    color: #333;
+    padding: 20px 0;
+    border-top: 1px solid #ddd;
+    margin-top: auto;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    max-height: 200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 20px;
+}
+
+.footer-section h4 {
+    color: #f39c12;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+.footer-section p {
+    font-size: 14px;
+}
+
+.footer-section ul li{
+    font-family: "Archivo";
+}
+
+.footer-section ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-section a {
+    color: #333;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    color: #777;
+}
+
+
+@media screen and (max-width : 428px){
+
+    .footer {
+        display: none;
+    }
+
+    main{
+        padding-bottom: 110px;
+    }
+
+    #logoTitreMobile{
+        width: 200px;
+        height: auto;
+        transform: translate(30px, -25px);
+    }
+}
+body, html {
+    height: 100%; /* Garantit que le body et html occupent toute la hauteur de la fenêtre */
+}
+
+.footer-section img {
+
+    height: 45px;
+    width: 45px;
+}
+
+
+
+
+

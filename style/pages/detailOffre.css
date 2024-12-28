@@ -1,0 +1,577 @@
+@import "../style.css";
+/*-------------/ page détail offre /--------------*/
+.mainDetail{
+    display: flex;
+    justify-content: center;
+}
+
+.conteneurOffreAvis{
+    display: block;
+}
+
+h1{
+    border-left: none !important;
+    padding-left: 0px !important;
+    margin-left: 0px !important;
+}
+
+
+.conteneurOffre{
+    display: flex;  
+    justify-content: center;
+    padding: 0px;
+    margin-bottom: 50px;
+}
+
+.offre{
+    margin: 15px;
+    background-color: white;
+    border-radius: 40px;
+    height: fit-content;
+    padding: 40px;
+    width: 1000px;
+}
+
+.offre p{
+    font-size: 1.2em;
+}
+
+.offre h2+p{
+    font-weight: bold;
+}
+
+.offre .conteneurSVGtexte{
+    display: flex;
+    align-items: center;
+    margin: 10px 0px;
+    flex-wrap: wrap;
+}
+.offre .conteneurSVGtexte img{
+    width: 40px;
+    height: 40px;
+}
+
+.offre .noteDetailOffre{
+    display: flex;
+    justify-content: center;
+}
+
+.offre .noteDetailOffre p{
+    margin-left: 20px;
+}
+
+.offre .noteDetailOffre .etoiles p{
+    margin-left: 0px;
+}
+
+.offre .imgChg{
+    margin: 0px;
+    padding: 0px;
+    height: 390px;
+}
+
+.offre .imgChg img{
+    border-radius: 15px 15px 0px 0px;
+    width: 920px;
+    height: 390px;
+    object-fit: cover;
+    margin: 0px;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+}
+
+
+
+.offre .resumePrixDetailOffre{
+    margin: 0px;
+    width: 920px;
+    padding: 15px;
+    height: fit-content;
+    border-radius: 0px 0px 15px 15px;
+    background-color: var(--primaryDark);
+    text-align: center;
+}
+
+.offre .resumePrixDetailOffre hr{
+    margin: 10px 15px;
+}
+
+.offre .resumePrixDetailOffre p{
+    font-size: 1em;
+    color: white;
+}
+
+.offre #descriptionOffre{
+    margin: 30px 0px;
+}
+
+.offre #partieTags img{
+    margin-right: 10px;
+}
+
+.offre #partieTags #conteneurTagsOffre{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0px;
+}
+
+.offre #partieTags, .offre #partieAdresse{
+    width: 330px;
+}
+
+#partieAdresse hr{
+    height: 3px;
+    background-color: black;
+    width: inherit;
+}
+
+.offre #conteneurTagsHoraires{
+    align-items: baseline;
+}
+
+.offre .conteneurSpaceBetween hr{
+    height: 3px;
+    background-color: black;
+}
+
+.offre .tagOffre{
+    padding: 10px 10px 7px;               /* ça rends moins bien si je mets juste 10px partout */
+    font-size: 1.3em;
+    border: 1px solid black;
+    border-radius: 70px;
+    margin: 0px 10px 10px;
+}
+
+.offre #partieHoraires{
+    width: 400px;
+}
+.offre #conteneurJoursOffre{
+    display: block;
+    margin: 20px 0px;
+}
+
+.offre .jour{
+    margin: 0px 5px;
+}
+
+.offre .jourOuvert{
+    border-color: var(--primaryDark);
+    background-color: var(--primaryDark);
+    color: white;
+}
+
+.offre #conteneurPlagesHoraires{
+    margin: 30px 10px;
+}
+
+.offre #conteneurPlagesHoraires .horaireEncadre{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 8px 8px 7px;
+}
+
+.offre #itineraire{
+    width: fit-content;
+    color: black;
+    transition: transform 0.2s ease;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+.offre #itineraire:hover{
+    transform: translateY(-2px);
+}
+
+.conteneurAvis{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px;
+    margin-top: 50px;
+}
+
+.avis{
+    margin: 15px;
+    background-color: white;
+    border-radius: 40px;
+    height: fit-content;
+    padding: 40px;
+    width: 1000px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.avis .datePublication{
+    display: none;
+}
+
+.avis .conteneurMembreAvis{
+    display: flex;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+.avis .conteneurMembreAvis img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.avis .conteneurMembreAvis .infoMembreAvis{
+    display: block;
+    margin-left: 20px;
+}
+
+.avis .conteneurMembreAvis .infoMembreAvis h3{
+    font-size: var(--typescale-h3);
+}
+
+.avis .conteneurMembreAvis .infoMembreAvis p{
+    font-size: var(--typescale-small-text);
+}
+
+.avis .titreAvis{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: var(--typescale-h3);
+}
+
+.avis .conteneurAvisTexte{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.avis .conteneurAvisTexte p{
+    font-size: var(--typescale-text);
+}
+
+.avis .conteneurAvisImage{
+    margin-top: 40px;
+}
+
+.avis .conteneurAvisImage img{
+    border: 2px solid black;
+    width: 360px;
+    height: 225px;
+    object-fit: cover;
+}
+
+.texteAvis{
+    word-wrap: break-word;
+}
+
+.circular-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden; /* Cache tout ce qui dépasse */
+}
+
+#btnAjouterAvis{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: black;
+    text-decoration: black;
+    border-radius: 40px;
+    padding: 10px;
+    margin: 20px 10px;
+}
+
+.btnAjouterAvisGrise{
+    color: var(--grisClair) !important;
+
+}
+
+.btnAjouterAvisGrise:hover{
+    cursor: pointer;
+}
+
+.btnAjouterAvisGrise img{
+    display: none;
+}
+
+#btnAjouterAvis img{
+    width: 60px;
+    margin-right: 20px;
+}
+
+#btnAjouterAvis h3{
+    font-size: 2.5rem;
+}
+
+#btnTrieDate{
+    display: flex;
+    background-color: white;
+    width: 100px;
+    height: 45px;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+#iconeTrieDate{
+    width: 40px;
+}
+
+#iconeTrieDate1{
+    width: 40px;
+}
+
+#iconeTrieDate2{
+    width: 40px;
+}
+
+#txtBtnDate{
+    user-select: none;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid black;
+}
+
+th, td {
+    padding: 20px;
+    font-size: 0.9em;
+    font-family: 'Archivo';
+}
+
+#btnSupprimerAvis{
+    border: 2px solid red;
+    width: fit-content;
+    border-radius: 20px;
+    padding: 8px;
+}
+
+#btnSupprimerAvis{
+    display: flex;
+    align-items: center;
+    margin: 5px 0px;
+
+    transition: transform 0.2s ease;
+}
+
+#btnSupprimerAvis img{
+    width: 22px;
+    height: 22px;
+    margin-right: 5px;
+    transform: translateY(-1px);
+}
+
+
+#btnSupprimerAvis p{
+    font-size: var(--typescale-small-text);
+    transform: translateY(1px);
+}
+
+#btnSupprimerAvis:hover{
+    cursor: pointer;
+    transform: translateY(-5px);
+}
+
+#partieCategorie img{
+    position: relative;
+    top: 50px;
+    margin-bottom: 10%;
+}
+
+#partieCategorie p{
+    margin-top: 5%;
+}
+
+@media screen and (max-width : 428px){
+    .conteneurOffre{
+        margin-top: 2.4em;
+        padding-bottom: 30px;
+    }
+
+    .conteneurAvis{
+        margin-top: 2.4em;
+        padding-bottom: 30px;
+    }
+
+    .offre .conteneurSpaceBetween{
+        display: block;
+    }
+
+    .offre h1{
+        margin-bottom: 10px;
+    }
+
+    .offre{
+        margin: 0px;
+        padding: 10px;
+        border-radius: 40px;
+        width: 350px;
+    }
+
+    .avis{
+        margin: 20px;
+        padding: 10px;
+        border-radius: 40px;
+        width: 350px;
+    }
+
+
+    .offre h2{
+        font-size: var(--typescale-h4);
+    }
+    .offre .imgChg{
+        height: 150px;
+    }
+    
+    .offre .imgChg img{
+        width: 920px;
+        height: 150px;
+    }
+
+    .offre p{
+        font-size: 1em;
+    }
+
+    .offre p+.conteneurSpaceBetween{
+        display: block;
+    }
+
+    .offre .noteDetailOffre{
+        display: flex;
+        justify-content: start;
+    }
+
+    .offre .resumePrixDetailOffre{
+        margin: 0px;
+        width: 330px;
+        padding: 15px;
+        border-radius: 0px 0px 15px 15px;
+        background-color: var(--primaryDark);
+        text-align: center;
+    }
+    
+    .offre .resumePrixDetailOffre hr{
+        margin: 10px 15px;
+    }
+    
+    .offre .resumePrixDetailOffre p{
+        font-size: 1em;
+        color: white;
+    }
+
+
+    .offre #partieTags img{
+        margin-right: 10px;
+    }
+    
+    .offre #partieTags #conteneurTagsOffre{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px 0px;
+        max-height: 250px;
+    }
+    
+    .offre #partieTags{
+        width: 330px;
+    }
+    
+    .offre #conteneurTagsHoraires{
+        align-items: baseline;
+    }
+    
+    .offre .conteneurSpaceBetween hr{
+        height: 3px;
+        background-color: black;
+    }
+    
+    .offre .tagOffre{
+        padding: 10px 10px 7px;               /* ça rends moins bien si je mets juste 10px partout */
+        font-size: 18px;
+        border: 1px solid black;
+        border-radius: 70px;
+        margin: 0px 10px 10px;
+    }
+    
+    .offre #partieHoraires{
+        width: 330px;
+    }
+    .offre #conteneurJoursOffre{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 20px 0px;
+    }
+
+    .offre .jour{
+        border: 2px solid black;
+        border-radius: 100px;
+        width: 35px;
+        height: 35px;
+        text-align: center;
+        padding: 8px 0px;
+        margin: 0px 3px;
+    }
+
+    .offre #conteneurPlagesHoraires .horaireEncadre{
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 5px 5px 3px;
+    }
+
+    .offre h4{
+        font-size: 24px;
+    }
+
+    .avis .titreAvis{
+        font-size: var(--typescale-h3);
+    }
+
+    .avis .conteneurAvisTexte p{
+        font-size: var(--typescale-small-text);
+    }
+
+    .avis .conteneurAvisImage{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    th, td {
+        padding: 20px;
+        font-size: 0.8em;
+        font-family: 'Archivo';
+    }
+
+    .avis .conteneurSpaceBetween{
+        display: block;
+    }
+
+    .avis #btnSupprimerAvis{
+        margin: 20px 0px 0px;
+        padding: 5px;
+        width: 350px;
+    }
+
+    .avis #btnSupprimerAvis p{
+        font-size: 13px;
+    }
+
+    .avis #btnSupprimerAvis img{
+        width: 15px;
+        height: 15px;
+    }
+
+    #btnAjouterAvis h3{
+        font-size: var(--typescale-h2);
+        transform: translateY(-2px);
+    }
+
+    #btnAjouterAvis img{
+        width: 25px;
+        height: 25px;
+        margin-right: 15px;
+    }
+
+}
