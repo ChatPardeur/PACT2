@@ -480,17 +480,23 @@ input{
     display: none;
 }
 
-.headerPC-Tab h3{
-    font-size: 30px;
-}
-
 .headerPC-Tab{
     display: block;
     background-color: #fff;
     position: sticky;
     top: 0;
     z-index: 10;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--grisClair);
+}
+/* cas spécial pour le bouton de connexion */
+#btCompte{
+  background-color: var(--primaryDark);
+  border-radius: 8px;
+  padding: 12px;
+}
+
+#btCompte h3{
+    color: white;
 }
 
 .navHeader,.ulHeader,.aHeader{
@@ -504,12 +510,12 @@ input{
     width: 100%;
     justify-content: space-between;
     padding-right: 0;
-    /*border-bottom: var(--primary) solid 2px;*/
+    padding: 10px 250px;
 }
 
 .logoHeader{
-    width: 135px;
-    height: 75px;
+    width: 80px;
+    height: 45px;
     position: relative;
     left: 30px;
 }
@@ -537,10 +543,7 @@ input{
 
 .liHeader {
     list-style: none;
-    border-right: 1px solid;
-    border-left: 1px solid;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding: 0 50px;
 }
 
 #test{
@@ -579,7 +582,7 @@ input{
 
 .ulHeader .aHeader:hover{
     /*background: linear-gradient(white, var(--primary));*/
-    transform: translateY(-5px);
+    transform: scale(0.95);
 }
 
 #logoEtPro:hover{

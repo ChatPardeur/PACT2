@@ -23,12 +23,12 @@
 
     /* Textes */
 
-    --typescale-h1: 2rem;
-    --typescale-h2: 1.8rem;
-    --typescale-h3: 1.45rem;
-    --typescale-h4: 1.15rem;
-    --typescale-h5: 0.85rem;
-    --typescale-large-text: 1.4rem;
-    --typescale-text: 1.222rem;         
-    --typescale-small-text: 1rem;       /* 16 px */
+    --typescale-h1: 2rem; /* 64px */
+    --typescale-h2: 1.813m; /* 50px */
+    --typescale-h3: 1.213rem; /* 45px */
+    --typescale-h4: 1rem; /* 32px */
+    --typescale-h5: 0.813em; /* 21px */
+    --typescale-large-text: 1.25rem; /* 34px */
+    --typescale-text: 0.75rem; /* 24px */
+    --typescale-small-text: 1rem; /* 16px */
 }
