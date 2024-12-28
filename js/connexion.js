@@ -1,6 +1,6 @@
 // Fonction d'affichage de la pop-up
 function validerCorrect() {
-    let pop = document.querySelector('.popUp');
+    /*let pop = document.querySelector('.popUp');
     pop.style.display = 'flex';
     document.body.classList.add('no-scroll');
 
@@ -9,5 +9,6 @@ function validerCorrect() {
         pop.style.display = 'none';
         document.body.classList.remove('no-scroll');
         window.location.href = "../pages/accueil.php";
-    }, 1500);
+    }, 1500);*/
+    window.location.href = "../pages/accueil.php";
 }
