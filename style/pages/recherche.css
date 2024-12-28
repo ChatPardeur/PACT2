@@ -38,7 +38,7 @@ main h1{
     
     border: none;
     border-radius: 20px;
-    font-size: 20px;
+    font-size: var(--typescale-text);
     padding: 0px 55px;
 }
 
@@ -199,7 +199,7 @@ fieldset > label > p{
 .filtreDeplie label input[type="checkbox"]:checked::after, .filtreTagDeplie label input[type="checkbox"]:checked::after {
     content: '✔'; /* Symbole de check */
     color: black; /* Couleur du symbole */
-    font-size: 25px; /* Taille du symbole */
+    font-size: var(--typescale-large-text); /* Taille du symbole */
     position: absolute;
     top: 48%;
     left: 50%;
@@ -210,7 +210,7 @@ fieldset > label > p{
     width: 95%; /* Prendre toute la largeur du parent */
     height: 40px; /* Hauteur de l'input */
     padding: 10px;
-    font-size: 16px;
+    font-size: var(--typescale-small-text);
     line-height: 20px;
     border: 1px solid black;
     border-radius: 5px;
@@ -234,7 +234,7 @@ fieldset > label > p{
     height: 84px;
     border: black solid 2px;
     border-radius: 20px;
-    font-size: 26px;
+    font-size: var(--typescale-large-text);
     appearance: none; /* Masque l'icône native du calendrier */
     -webkit-appearance: none; /* Pour Safari */
     padding-left: 7%;
@@ -288,7 +288,7 @@ input[type="number"]::-webkit-inner-spin-button {
     height: 75px;
     border: black solid 2px;
     border-radius: 20px;
-    font-size: 26px;
+    font-size: var(--typescale-large-text);
     padding: 0 58px 0 15px;
 }
 
@@ -304,7 +304,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .number-input button {
     background: none;
     border: none;
-    font-size: 20px;
+    font-size: var(--typescale-text);
     cursor: pointer;
     padding: 5px;
     user-select: none;
@@ -351,7 +351,7 @@ input[type="number"]::-webkit-inner-spin-button {
     height: 41px;
     border: black solid 2px;
     border-radius: 10px;
-    font-size: 16px;
+    font-size: var(--typescale-small-text);
     padding: 0 5px;
     margin-top: 8%;
 }

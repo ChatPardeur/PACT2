@@ -144,7 +144,7 @@ form {
     border: 3px solid #007bff; /* Bordure plus épaisse */
     border-radius: 15px; /* Bords plus arrondis */
     background-color: white;
-    font-size: 20px; /* Texte agrandi */
+    font-size: vzr(--typescale-text); /* Texte agrandi */
     font-weight: bold;
     color: #333;
     margin-bottom: 3%;

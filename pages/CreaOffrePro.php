@@ -427,7 +427,7 @@ if (in_array($_SESSION["idCompte"], $idproprive) || in_array($_SESSION["idCompte
 
             <div class="conteneur-formulaire">
 
-                <h1>Création d'une offre</h1>
+                <h2>Création d'une offre</h2>
 
                 <!-- Formulaire de création d'offre -->
 

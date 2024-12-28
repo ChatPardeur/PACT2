@@ -3,13 +3,13 @@
 @import "fonts/fonts.css";
 @import "abstract/_variables.css";
 
+body{
+    font-family: "Archivo";
+}
+
 h1{
     font-family: "Luciole";
     font-size: var(--typescale-h1);
-    
-    border-left: 5px solid var(--secondary);
-    padding-left: 20px;
-    margin-left: 10px;
 }
 
 h2{
@@ -33,18 +33,15 @@ h5{
 }
 
 p{
-    font-family: "Archivo";
     font-size: var(--typescale-text);
 }
 
 label{
     font-size: var(--typescale-text);
-    font-family: "Archivo";
 }
 
 input{
     font-size: var(--typescale-text);
-    font-family: "Archivo";
 }
 
 
