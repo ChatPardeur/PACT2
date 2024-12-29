@@ -25,10 +25,10 @@
 
     --typescale-h1: 2rem;
     --typescale-h2: 1.8rem;
-    --typescale-h3: 1.45rem;
-    --typescale-h4: 1.15rem;
+    --typescale-h3: 1.21rem;
+    --typescale-h4: 1rem;
     --typescale-h5: 0.85rem;
-    --typescale-large-text: 1.4rem;     /* 22.5 px */
-    --typescale-text: 1.222rem;         /* 19.5 px */
-    --typescale-small-text: 1rem;       /* 16 px */
+    --typescale-large-text: 1.25rem; 
+    --typescale-text: 0.75rem;
+    --typescale-small-text: 1rem;
 }
