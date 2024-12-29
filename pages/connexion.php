@@ -111,11 +111,11 @@ if ($_GET['user-tempo'] === 'pro') {
 </head>
 <body class=
 <?php
-    /*if ($_GET['user-tempo'] == 'pro') {
+    if ($_GET['user-tempo'] == 'pro') {
         echo 'fondPro';
     } else {
         echo 'fondVisiteur';
-    }*/
+    }
 
 ?>
 >
