@@ -13,62 +13,67 @@ $dbh->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC); // force l'u
     </head>
     <body>
         <aside>
-
-            <fieldset class="status">
-                <legend>Ouverture du site</legend>
-                <label class="toggle-button">
-                    <input type="checkbox" name="ouverture" value="ferme">
-                    <span>Ouvert</span>
-                </label>
-                <label class="toggle-button">
-                    <input type="checkbox" name="ouverture" value="ferme">
-                    <span>Fermer</span>
-                </label>
-            </fieldset>
-
-            <fieldset class="categorie">
-                <legend>Categorie</legend>
-                <?php 
-                $cat = ["Restauration", "Parc", "Spectacle", "Activités", "Visite"];
-                foreach ($cat as $categorie) {?>
+            <div class="button-exit">
+                <span>x</span>
+            </div>
+            <div class="content-aside">
+                <fieldset class="status">
+                    <legend>Ouverture du site</legend>
                     <label class="toggle-button">
                         <input type="checkbox" name="ouverture" value="ferme">
-                        <span><?php echo $categorie; ?></span>
+                        <span>Ouvert</span>
                     </label>
-                <?php }
-                ?>
-            </fieldset>
-
-            <fieldset class="prix">
-                <legend>Prix</legend>
-                <span class="price-value">0 €</span>
-                <input type="range" id="price" name="price" min="0" max="100" value="50" step="1">
-                <span class="price-value">100 €</span>
-            </fieldset>
-
-            <fieldset class="status">
-                <legend>Lieu</legend>
-                <div class="input-group">
-                    <input id="lieu" type="text" name="lieu" placeholder="Commune / Lieu-dit">
-                </div>
-            </fieldset>
-
-            <fieldset class="categorie">
-                <legend>Categorie</legend>
-                <?php 
-                $stmt2 = $dbh->prepare("select DISTINCT tripskell._tags.nomTag from tripskell._tags");
-
-                $stmt2->execute();
-                $tags = $stmt2->fetchAll();
-                $tags = array_column($tags, 'nomtag');
-                foreach ($tags as $tag) {?>
                     <label class="toggle-button">
                         <input type="checkbox" name="ouverture" value="ferme">
-                        <span><?php echo $tag; ?></span>
+                        <span>Fermer</span>
                     </label>
-                <?php }
-                ?>
-            </fieldset>
+                </fieldset>
+
+                <fieldset class="categorie">
+                    <legend>Categorie</legend>
+                    <?php 
+                    $cat = ["Restauration", "Parc", "Spectacle", "Activités", "Visite"];
+                    foreach ($cat as $categorie) {?>
+                        <label class="toggle-button">
+                            <input type="checkbox" name="ouverture" value="ferme">
+                            <span><?php echo $categorie; ?></span>
+                        </label>
+                    <?php }
+                    ?>
+                </fieldset>
+
+                <fieldset class="prix">
+                    <legend>Prix</legend>
+                    <span class="price-value">0 €</span>
+                    <input type="range" id="price" name="price" min="0" max="100" value="50" step="1">
+                    <span class="price-value">100 €</span>
+                </fieldset>
+
+                <fieldset class="status">
+                    <legend>Lieu</legend>
+                    <div class="input-group">
+                        <input id="lieu" type="text" name="lieu" placeholder="Commune / Lieu-dit">
+                    </div>
+                </fieldset>
+
+                <fieldset class="categorie">
+                    <legend>Categorie</legend>
+                    <?php 
+                    $stmt2 = $dbh->prepare("select DISTINCT tripskell._tags.nomTag from tripskell._tags");
+
+                    $stmt2->execute();
+                    $tags = $stmt2->fetchAll();
+                    $tags = array_column($tags, 'nomtag');
+                    foreach ($tags as $tag) {?>
+                        <label class="toggle-button">
+                            <input type="checkbox" name="ouverture" value="ferme">
+                            <span><?php echo $tag; ?></span>
+                        </label>
+                    <?php }
+                    ?>
+                </fieldset>
+            </div>
+            
 
 
         </aside>

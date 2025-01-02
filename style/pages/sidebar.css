@@ -1,3 +1,6 @@
+@import "fonts/fonts.css";
+@import "/style/abstract/_variables.css";
+
 /* Style général pour le conteneur de la page */
 body {
     display: flex;
@@ -8,7 +11,7 @@ body {
 /* Style pour la barre latérale gauche */
 aside {
     width: 35%;
-    padding: 3%; /* Espacement interne (basé sur l'unité relative de la police) */
+    padding: 1%;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Ombre */
     border-right: 1px solid #ddd; /* Bordure à droite */
     height: 100vh; /* Hauteur complète de l'écran */
@@ -16,6 +19,10 @@ aside {
     top: 0;
     left: 0;
     overflow-y: auto; /* Ajoute un défilement si le contenu dépasse */
+}
+
+.content-aside{
+    padding: 0 4%;
 }
 
 /* Style pour le contenu principal */
@@ -216,4 +223,22 @@ fieldset {
 .input-group input:focus {
     border-color: #007bff;
     box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+}
+
+.button-exit{
+    /*background-color: var(--grisClair);*/
+    border: solid 2px var(--grisClair);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    color: var(--grisClair);
+    font-size: 2em;
+}
+
+.button-exit:hover{
+    background-color: var(--grisClair);
+    color: white;
 }
