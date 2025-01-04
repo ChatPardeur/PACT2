@@ -7,7 +7,7 @@ body{
 }
 
 main {
-    min-height: 90%; /* Pour mettre le footer en bas de toutes les pages */
+    min-height: 90vh; /* Pour mettre le footer en bas de toutes les pages */
     box-sizing: inherit;
 }
 
@@ -468,6 +468,7 @@ input{
 .headerPC-Tab{
     display: flex;
     align-items: center;
+    justify-content: center;
     background-color: #fff;
     position: sticky;
     top: 0;
@@ -493,7 +494,7 @@ input{
 }
 
 .navHeader{
-    width: 100%;
+    width: 70%;
     justify-content: space-between;
     padding-right: 0;
     padding: 10px;
