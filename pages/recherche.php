@@ -53,7 +53,7 @@
 
         <link rel="stylesheet" href="/style/pages/recherche.css">
         
-        
+        <link rel="stylesheet" href="/style/pages/sidebar.css">
 
     </head>
     <body  class=<?php                          //met le bon fond en fonction de l'utilisateur
@@ -94,6 +94,7 @@
                 <h1>Rechercher</h1>
             </div>
         </div>
+<?php include('../php/sidebar.php'); ?>
         <main>
             <section id="conteneurBarre">
                 <label for="searchbar"></label>
