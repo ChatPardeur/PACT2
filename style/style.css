@@ -452,7 +452,8 @@ input{
 }
 
 .headerPC-Tab{
-    display: block;
+    display: flex;
+    align-items: center;
     background-color: #fff;
     position: sticky;
     top: 0;
@@ -481,7 +482,7 @@ input{
     width: 100%;
     justify-content: space-between;
     padding-right: 0;
-    padding: 10px 250px;
+    padding: 10px;
 }
 
 .logoHeader{
@@ -569,7 +570,6 @@ input{
 /*-------------/ HEADER MOBILE /--------------*/
 
 @media screen and (max-width : 428px){
-
     .headerPC-Tab{
         display: none;
     }
