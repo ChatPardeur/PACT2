@@ -456,6 +456,7 @@ input{
 .headerPC-Tab{
     display: flex;
     align-items: center;
+    justify-content: center;
     background-color: #fff;
     position: sticky;
     top: 0;
@@ -481,7 +482,7 @@ input{
 }
 
 .navHeader{
-    width: 100%;
+    width: 70%;
     justify-content: space-between;
     padding-right: 0;
     padding: 10px;
