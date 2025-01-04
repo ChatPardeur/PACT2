@@ -25,7 +25,7 @@ function af_offre($row) {
     }
 ?>
     ">
-        <h1><?php echo $row["titreoffre"];?></h1>
+        <h2><?php echo $row["titreoffre"];?></h2>
         <div class="conteneurSVGtexte">
             <img src="/icones/logoUserSVG.svg" alt="pro">
             <p><?php echo $dbh->query("select raison_social from tripskell._professionnel as p where p.id_c='" . $row["id_c"] . "';")->fetchAll()[0]["raison_social"];?></p>

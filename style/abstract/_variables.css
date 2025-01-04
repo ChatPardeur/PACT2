@@ -29,6 +29,6 @@
     --typescale-h4: 1rem;
     --typescale-h5: 0.85rem;
     --typescale-large-text: 1.25rem; 
-    --typescale-text: 0.75rem;
-    --typescale-small-text: 1rem;
+    --typescale-text: 1rem;
+    --typescale-small-text: 0.85rem;
 }

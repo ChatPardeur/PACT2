@@ -55,7 +55,6 @@ input{
 
 .fondVisiteur{
     background-color: var(--fondVisiteurMembre);
-
 }
 
 .displayNone{
@@ -256,7 +255,6 @@ input{
 .lienApercuOffre{
     width: fit-content;
     height: fit-content;
-    margin: 5px;
     text-decoration: none;
     color: black;
     display: block;
@@ -266,18 +264,30 @@ input{
     width: 350px;
     height: 450px;
 
-    border-radius: 20px;
     background-color: white;
-    padding: 20px;
 
     overflow: hidden;
     margin-bottom: 30px;
+
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+.apercuOffre h2{
+    margin: 0px;
 }
 
 .apercuOffre .conteneurSVGtexte{
     display: flex;
     align-items: center;
     margin: 5px 0px;
+    height: fit-content;
+}
+
+.apercuOffre .conteneurSpaceBetween{
+    padding: 0px;
+    margin: 0px;
 }
 
 .apercuOffre .conteneurSVGtexte img{
@@ -288,6 +298,7 @@ input{
 
 .apercuOffre .conteneurSVGtexte p{
     font-size: var(--typescale-large-text);
+    margin-left: 5px;
 }
 
 .conteneurSpaceBetween{                         /* un conteneur pour mettre les éléments en space between */   
@@ -309,8 +320,8 @@ input{
     color: var(--rouge);
 }
 
-.apercuOffre img{
-    width: 380px;
+.apercuOffre .conteneurImage img{
+    width: 350px;
     height: 180px;
     object-fit: cover;
     display: block;
@@ -328,7 +339,7 @@ input{
 }
 .apercuOffre .conteneurImage span{
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 .text-overlay {
@@ -343,6 +354,7 @@ input{
     z-index: 2;
     width: fit-content;
     height: fit-content;
+    margin: 0px;
 }
 
 
