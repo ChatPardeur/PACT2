@@ -173,12 +173,10 @@ input{
     #conteneurTitreMobile h1{
         border-left: none;
         padding: 0px;
-        font-size: 2.5rem;
         transform: translateY(-8px);
     }
 
     #conteneurTitreMobile h4{
-        font-size: 1.7rem;
         transform: translateY(-8px);
     }
 
@@ -289,7 +287,7 @@ input{
 
 
 .apercuOffre .conteneurSVGtexte p{
-    font-size: 20px;
+    font-size: var(--typescale-large-text);
 }
 
 .conteneurSpaceBetween{                         /* un conteneur pour mettre les éléments en space between */   
@@ -325,12 +323,12 @@ input{
 }
 
 .apercuOffre .conteneurImage p{
-    font-size: 1em;
+    font-size: var(--typescale-small-text);
     text-align: right;
 }
 .apercuOffre .conteneurImage span{
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 
 .text-overlay {
@@ -341,7 +339,7 @@ input{
     padding: 10px;
     background-color: var(--primaryDark);
     color: white; 
-    font-size: 0.7em;
+    font-size: var(--typescale-text);
     z-index: 2;
     width: fit-content;
     height: fit-content;
@@ -368,13 +366,9 @@ input{
 }
 
 .apercuOffre .resumeApercu{
-    font-size: 1.2em;
+    font-size: var(--typescale-large-text);
     margin: 10px 0px;
     height: 55px;
-}
-
-.apercuOffre h3{
-    font-size: 2em;
 }
 
 
@@ -411,17 +405,13 @@ input{
     }
 
 
-    .apercuOffre h3{
-        font-size: 1.5em;
-    }
-
     .apercuOffre .conteneurSVGtexte img{
         width: 25px; 
         height: 25px;
     }
 
     .apercuOffre p{
-        font-size: 16px; 
+        font-size: var(--typescale-small-text); 
     }
 
     .apercuOffre img{
