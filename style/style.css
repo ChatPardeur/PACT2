@@ -7,7 +7,7 @@ body{
 }
 
 main {
-    min-height: 90%; /* Pour mettre le footer en bas de toutes les pages */
+    min-height: 90vh; /* Pour mettre le footer en bas de toutes les pages */
     box-sizing: inherit;
 }
 
