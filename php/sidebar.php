@@ -13,7 +13,7 @@ $tags = $stmt->fetchAll();
 $tags = array_column($tags, 'nomtag');
 ?>
 
-        <aside id="filtres-aside">
+        <aside id="filtres-aside" class="displayNone">
             <div id="bn-sidebar-exit" class="button">
                 <span>x</span>
             </div>

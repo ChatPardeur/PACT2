@@ -42,7 +42,7 @@ aside {
 }
 
 aside > * {
-    margin-top: 10vh;    /* Décale le contenu vers le bas pour ne pas qu'il soit sous la nav bar */
+    margin-top: 80px;    /* Décale le contenu vers le bas pour ne pas qu'il soit sous la nav bar */
 }
 
 .content-aside{
