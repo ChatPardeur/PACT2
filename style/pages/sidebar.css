@@ -7,22 +7,23 @@ aside {
     width: 35%;
     height: 100%;
     padding: 1%;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Ombre */
-    border-right: 1px solid #ddd; /* Bordure à droite */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    border-right: 1px solid #ddd;
     
-    position: fixed; /* Fixe sur la gauche */
-    top: 0;
+    position: fixed;
     left: 0;
+    top: 0;
+
     overflow-y: auto; /* Ajoute un défilement si le contenu dépasse */
 
-    z-index: 100;
+    z-index: 1;
     background-color: #fff;
 
     visibility: visible;
 }
 
 .content-aside{
-    padding: 0 3% 3%;
+    padding: 3%;
     box-sizing: initial
 }
 
@@ -216,16 +217,20 @@ fieldset {
 }
 
 .button-exit{
-    /*background-color: var(--grisClair);*/
+    margin-top: 12%;
     
     width: 40px;
     height: 40px;
+
     display: flex;
     justify-content: center;
     align-items: center;
+
     border-radius: 100px;
-    color: var(--grisClair);
+
     font-size: 2em;
+    
+    color: var(--grisClair);
     border: solid 2px white;
 }
 
