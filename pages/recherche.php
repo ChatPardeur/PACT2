@@ -383,6 +383,7 @@
                 </article>
             </section>
         </main>
+
         <?php
             include "../composants/footer/footer.php";
         ?>

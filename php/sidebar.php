@@ -13,8 +13,8 @@ $tags = $stmt->fetchAll();
 $tags = array_column($tags, 'nomtag');
 ?>
 
-        <aside>
-            <div class="button-exit">
+        <aside id="filtres-aside">
+            <div id="bn-sidebar-exit" class="button">
                 <span>x</span>
             </div>
             <div class="content-aside">
@@ -81,4 +81,10 @@ $tags = array_column($tags, 'nomtag');
                 </fieldset>
             </div>
             
+        </aside>
+
+        <aside id="menu-aside">
+            <div id="bn-sidebar-filtres" class="button">
+                <span>=</span>
+            </div>
         </aside>

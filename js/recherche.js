@@ -51,7 +51,7 @@ la valeur de l'information (exemple : "titre" => "Fort la Latte", "prix" => 15)*
         mapTempo.set("id", element.id);                 //l'id de l'offre
         mapTempo.set("visibilite", true);               //indique si l'élément doit être montré par la recherche
         mapTempo.set("element", element);               //l'élément dans le DOM
-        mapTempo.set("titre", document.querySelectorAll("#" + element.id + " .apercuOffre h1")[0].textContent);     //titre de l'offre
+        mapTempo.set("titre", document.querySelectorAll("#" + element.id + " .apercuOffre h2")[0].textContent);     //titre de l'offre
         mapTempo.set("categorie", document.querySelector("#" + element.id + " #cat").textContent);
         mapTempo.set("ville", document.querySelector("#" + element.id + " #ville").textContent);
         // mapTempo.set("date", document.querySelector("#" + element.id + " #date").textContent);
@@ -713,4 +713,17 @@ window.addEventListener("pageshow", function() {
     });
     
     barreRecherche.value = '';
+});
+
+
+document.getElementById('bn-sidebar-exit').addEventListener("click", function() {
+    document.getElementById('filtres-aside').classList.add('displayNone');
+    document.getElementById('menu-aside').classList.remove('displayNone');
+    document.querySelector('main').classList.remove('main-for-menu-opened');
+});
+
+document.getElementById('bn-sidebar-filtres').addEventListener("click", function() {
+    document.getElementById('menu-aside').classList.add('displayNone');
+    document.getElementById('filtres-aside').classList.remove('displayNone');
+    document.querySelector('main').classList.add('main-for-menu-opened');
 });

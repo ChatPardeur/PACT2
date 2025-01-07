@@ -4,7 +4,7 @@
 
 /* Style pour la barre latérale gauche */
 aside {
-    width: 35%;
+    
     height: 100%;
     padding: 1%;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
@@ -20,6 +20,29 @@ aside {
     background-color: #fff;
 
     visibility: visible;
+}
+
+.main-for-menu-opened {
+    align-items: end;
+    padding: 0;
+}
+
+.main-for-menu-opened > * {
+    width: 60%;
+}
+
+#menu-aside {
+    display: flex;
+    width: 2.5%;
+}
+
+#filtres-aside {
+    width: 35%;
+    
+}
+
+aside > * {
+    margin-top: 10vh;    /* Décale le contenu vers le bas pour ne pas qu'il soit sous la nav bar */
 }
 
 .content-aside{
@@ -216,9 +239,7 @@ fieldset {
     box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
 }
 
-.button-exit{
-    margin-top: 12%;
-    
+.button{    
     width: 40px;
     height: 40px;
 
@@ -229,12 +250,14 @@ fieldset {
     border-radius: 100px;
 
     font-size: 2em;
-    
+
     color: var(--grisClair);
     border: solid 2px white;
+
+    float: right;
 }
 
-.button-exit:hover{
+.button:hover{
     /*background-color: var(--grisClair);*/
     border: solid 2px var(--grisClair);
     

@@ -9,6 +9,11 @@ body{
 main {
     min-height: 90vh; /* Pour mettre le footer en bas de toutes les pages */
     box-sizing: inherit;
+
+    /* Pour quand la sidebar apparait */
+    display: flex;
+    flex-direction: column;
+    padding: 0 15%;
 }
 
 h1{
