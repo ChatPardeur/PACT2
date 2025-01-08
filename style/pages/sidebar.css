@@ -33,7 +33,9 @@ aside {
 
 #menu-aside {
     display: flex;
-    width: 2.5%;
+    flex-direction: column;
+    align-items: center;
+    width: 2%;
 }
 
 #filtres-aside {
@@ -79,6 +81,17 @@ aside ul li a {
 aside ul li a:hover {
     background-color: #ddd;
     color: #000;
+}
+
+svg {
+    margin: 8px;
+}
+
+svg > path {
+    stroke: var(--grisClair);
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
 }
 
 /* Style pour le label du bouton */

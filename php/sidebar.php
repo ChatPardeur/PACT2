@@ -85,6 +85,8 @@ $tags = array_column($tags, 'nomtag');
 
         <aside id="menu-aside">
             <div id="bn-sidebar-filtres" class="button">
-                <span>=</span>
+                <svg viewBox="0 0 89 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M86.3333 3H3L36.3333 42.4167V69.6667L53 78V42.4167L86.3333 3Z">
+                </svg>
             </div>
         </aside>
